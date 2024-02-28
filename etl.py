@@ -26,6 +26,10 @@ def enviar_dados(df: pd.DataFrame,formato: list):
         df.to_csv('coleta.csv', index=False)
     if 'parquet' in formato:
         df.to_parquet('coleta.parquet', index=False)
+        
+def pipeline(pasta: str, formato_saida: list):
+    dataframe = transformar_dado(extrair_dado(pasta))
+    enviar_dados(dataframe, formato_saida)
 
 if __name__ == "__main__":
     pasta = 'data'
