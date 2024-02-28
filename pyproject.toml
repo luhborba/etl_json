@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "bootcamp"
+version = "0.1.0"
+description = ""
+authors = ["Luciano Borba <luhborbafilho@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.1"
+pandera = "^0.18.0"
+pyarrow = "^15.0.0"
+fastparquet = "^2024.2.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
